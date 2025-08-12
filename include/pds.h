@@ -2,7 +2,7 @@
 #define  PDS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "../ses/ses.h"
+#include "ses.h"
 #include <netinet/in.h>
 
 #define UET_INITIATOR_START_PSN   123456
