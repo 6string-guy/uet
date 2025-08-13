@@ -1,4 +1,4 @@
-#include "../include/uet_utils.h"
+#include "uet_utils.h"
 #include <stdio.h>
 
 int main(int argc, char **argv) {

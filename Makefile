@@ -1,15 +1,13 @@
 CC = gcc
-CFLAGS = -Iinclude -Wall
-SRC = src/sender.c src/receiver.c src/uet_utils.c
-OBJ = $(SRC:.c=.o)
+CFLAGS = -Wall
 
-all: bin/sender bin/receiver
+all: sender receiver
 
-bin/sender: src/sender.o src/uet_utils.o
-	$(CC) $(CFLAGS) -o $@ $^
+sender: sender.c uet_utils.c
+	$(CC) $(CFLAGS) $^ -o sender
 
-bin/receiver: src/receiver.o src/uet_utils.o
-	$(CC) $(CFLAGS) -o $@ $^
+receiver: receiver.c uet_utils.c
+	$(CC) $(CFLAGS) $^ -o receiver
 
 clean:
-	rm -f src/*.o bin/sender bin/receiver
+	rm -f sender receiver *.o

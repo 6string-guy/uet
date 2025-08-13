@@ -1,4 +1,4 @@
-#include "../include/uet_utils.h"
+#include "uet_utils.h"
 #include <stdio.h>
 
 void debug_print_endpoint(SES_Endpoint_type *ep) {
