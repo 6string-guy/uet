@@ -74,11 +74,11 @@ int main(int argc, char *argv[]) {
     ses_header.hdr.som1_hdr.buffer_offset[1] = 0x2222;      // Easy to verify
     
     // Set memory key/match bits with meaningful values
-    ses_header.hdr.som1_hdr.memory_key_match_bits = 0xBEEF;  // Easy to verify
+    //ses_header.hdr.som1_hdr.memory_key_match_bits = 0xBEEF;  // Easy to verify
     ses_header.hdr.som1_hdr.memory_key_match_bits[1] = 0xCAFE;  // Easy to verify
     
     // Set header data with meaningful values
-    ses_header.hdr.som1_hdr.header_data = 0xAAAA;        // Easy to verify
+    //ses_header.hdr.som1_hdr.header_data = 0xAAAA;        // Easy to verify
     ses_header.hdr.som1_hdr.header_data[1] = 0xBBBB;        // Easy to verify
     
     memcpy(packet_buffer + packet_offset, &ses_header, sizeof(ses_header));
